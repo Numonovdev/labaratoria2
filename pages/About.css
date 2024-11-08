@@ -67,8 +67,10 @@ a:hover{
 }
 .header-btn:hover{
     background-color: #fff;
+    color: #014E56;
     cursor: pointer;
 }
+
 .header-btn:hover a{
     color: #014E56;
 }
@@ -78,49 +80,43 @@ a:hover{
 .main{
     width: 100%;
     color: #fff;
+    height: 400px;
+    display: flex;
+    position: relative;
+    align-items: center;
 }
 .main_container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
-    height: 500px;
-    /* position: relative; */
+    gap: 10px;
+    height: 156px;
 }
 .main_container .group2{
     position: absolute;
-    top: 250px;
-    z-index: -100;
+    z-index: 100;
+    right: 0px;
     /* width: 200px; */
-    height: 200px;
-    left: 0px;
+    height: 200px; 
+    bottom: 0px;
 }
 
 .main-h1{
-    font-size: 100px;
+    font-size: 64px;
     line-height: 100px;
     font-weight: bold;
-    width: 615px;
-    height: 200px;
+    /* width: 350px; */
+    height: 156px;
 }
 
-.main-h1 span{
-    color: #F67E7E;
-}
 .main-right{
-    width: 445px;
+    width: 730px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 195px;
-    position: relative;
+    height: 156px;
+    /* position: relative; */
 }
-.group1{
-    position: absolute;
-    bottom: -270px;
-    z-index: -1;
-}
-
 .stk{
     width: 50px;
     height: 4px;
@@ -132,166 +128,147 @@ a:hover{
     line-height: 28px;
 }
 
+
+
+
+
+
+
 /* sector */
 .section{
     z-index: 100;
-    background-color: #012F34;
-    margin-top: 110px;
+    background-color: #004047;
+    /* margin-top: 110px; */
     width: 100%;
-    height: 684px;
+    height: 1002px;
     display: flex;
     align-items: center;
     color: #fff;
     position: relative;
 }
-.section-img{
+.section .section-img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section .section-img2{
     position: absolute;
     bottom: 0;
     right: 0;
 }
 .section_container{
-    display: flex;
-    height: 404px;
-    justify-content: space-evenly;
-}
-.section-left{
+    height: 722px;
     display: flex;
     flex-direction: column;
-    width: 445px;
-    height: 202px;
+    align-items: center;
     justify-content: space-between;
 }
-.section-left h1{
+.section_container h1{
+    text-align: center;
     font-size: 48px;
     line-height: 48px;
     font-weight: 700;
 }
-
-.section_container .boxes{
-    width: 540px;
-    height: 346px;
+.section_container .block{
+    height: 610px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.boxs{
+    width: 350px;
+    height: 281px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-.boxes .box{
-   display: flex;
-   gap: 30px;
-   align-items: center;
-}
-.box .box-in{
+    align-items: center;
     position: relative;
+}
+.boxs .add{
     width: 56px;
     height: 56px;
-    border-radius: 56px;
-    background-color: #2C6269;
-}
-.box-in-img{
+    border-radius: 26px;
+    background-color: #F67E7E;
     position: absolute;
-    width: 56px;
-    height: 56px;
-    top: -25px;
-    left: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
 }
-
-
-.box .box-text{
+.boxs .add img{
+    font-size: 48px;
+    line-height: 48px;
+}
+.box{
+    width: 350px;
+    height: 253px;
+    background-color: #012F34;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 445px;
-    height: 94px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10%;
 }
-.box-text .p-red{
+.box .img-box{
+    width: 96px;
+    height: 96px;
+    border: 2px solid #C4FFFE;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box .img-box img{
+    width: 96px;
+    height: 96px;
+}
+.box span{
+    text-align: center;
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
-    color: #F67E7E;
+    color: #79C8C7;
 }
-.box-text .p-white{
+.box p{
+    width: 254px;
+    text-align: center;
     font-size: 15px;
     line-height: 25px;
-    font-weight: 600;
+    font-weight: 500;
 }
+
 
 
 /* artikle */
 .article{
     width: 100%;
-    height: 745px;
+    height: 437px;
     display: flex;
+    background-color: #012F34;
+    position: relative;
     align-items: center;
+}
+.article .article-img{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .article_container{
     display: flex;
-    color: #fff;
     flex-direction: column;
-    justify-content: space-between;
-    height: 465px;
+    align-items: center; 
+    height: 200px;
+    color: #fff;
+    justify-content: space-around;
 }
-
-.article-h1{
-    width: 932px;
+.article_container h1{
     font-size: 48px;
     line-height: 48px;
     font-weight: 700;
-    text-align: center;
-}
-.article-h1 span{
-    color: #C4FFFE;
 }
 
-.article-block{
-    height: 313px;
-    width: 100%;
-    display: flex;
-    padding-top: 50px;
-    justify-content: space-between;
-}
 
-.article-box{
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.article-box p{
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 600;
-    text-align: center;
-}
-.article-box .name-job{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.name-job h1{
-    font-size: 18px;
-    line-height: 28px;
-    color: #79C8C7;
-}
-.name-job p{
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 500;
-    color: #fff;
-}
-.article-img-box{
-    width: 62px;
-    height: 62px;
-    border: 2px solid #C4FFFE;
-    border-radius: 31px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.article-img-box img{
-    width: 62px;
-    height: 62px;
-}
 
 /* contactus */
 .contactus{
@@ -328,7 +305,6 @@ a:hover{
     cursor: pointer;
     background-color: transparent;
 }
-
 .contactus-btn a{
     color: #012F34;
     font-weight: 700;
@@ -344,11 +320,11 @@ a:hover{
 /* footer */
 
 .footer{
+    background-color: #002529;
     width: 100%;
     height: 196px;
     display: flex;
     align-items: center;
-    background-color: #002529;
 }
 .footer_container{
     display: flex;
